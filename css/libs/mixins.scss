@@ -1,0 +1,38 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;  
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $color_white;
+    font-size: 1rem;
+    background: #3E6953;
+    border-radius: 14px;
+    cursor: pointer;
+}
+@mixin link_over {
+    &:hover {
+        background-color: $color_green2;
+    }
+}
+
+@mixin titre_h2 {
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    padding: 4% 0;
+}
+@mixin center {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
